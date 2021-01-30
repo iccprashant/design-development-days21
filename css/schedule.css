@@ -1,0 +1,198 @@
+*{
+    margin: 0 ;
+    padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     flex-wrap: wrap;
+     min-height: 100vh;
+     background-color: #2a1e70;
+     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+section{
+  position: relative;
+  background-color: #2a1e70;
+  width: 100%;
+}
+
+section::before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: linear-gradient(#f00,#f0f);
+  clip-path: circle(30% at right 70%);
+}
+
+section::after{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: linear-gradient(#f00,#f0f);
+  clip-path: circle(30% at 10% 10%);
+}
+
+
+.teamTitle{
+    padding: 7rem;
+}
+
+.teamTitle p:nth-child(1){
+    color: #fff;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 4rem;
+    text-align: center;
+    font-weight: 700;
+}
+
+.teamTitle p:nth-child(3){
+    color: #fff;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 1.5rem;
+    text-align: center;
+    font-weight: lighter;
+}
+
+
+section P{
+    color: #fff;
+    text-align: center;
+    padding-top: 2rem;
+    font-size: 2rem;
+    font-weight: 600;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.floating-butn{
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    background: #F44F9D;
+    display:  flex;
+    border-radius: 50%;
+    color: #fff;
+    font-size: 40px;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.25);
+    position: fixed;
+    left: 20px;
+    top: 20px;
+    transition: backgroud 0.25s;
+    
+}
+
+/* ************************************************** */
+.floating-butn:active{
+    background: #FD747D;
+}
+
+.event-container {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  max-width: 800px;
+  padding-top: 3rem;
+  margin: 0 auto;
+}
+
+.event-container h3.year {
+  font-size: 40px;
+  text-align: center;
+  color: #FD747D;
+  border-bottom: 1px solid #b1b1b1;
+}
+
+.event-container .event {
+  /* box-shadow: 0 4px 16px -8px rgba(255, 255, 255, 0.205); */
+  display: flex;
+  border-radius: 8px;
+  margin: 32px 0;
+  box-shadow: 0 15px 35 px rgba(0,0,0,0.2);
+  background: rgba(255,255,255,0.05)
+}
+
+.event .event-left {
+  background: #0000006e;
+  min-width: 82px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #eee;
+  padding: 8px 48px;
+  font-weight: bold;
+  text-align: center;
+  border-radius: 8px 0 0 8px;
+}
+
+.event .event-left .date {
+  font-size: 56px;
+}
+
+.event .event-left .month {
+  font-size: 16px;
+  font-weight: normal;
+}
+
+.event .event-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 24px;
+}
+
+.event .event-right h3.event-title {
+  font-size: 24px;
+  margin: 24px 0 10px 0;
+  color: #eee;
+  text-transform: uppercase;
+}
+
+.event .event-right .event-timing {
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100px;
+  padding: 8px;
+  border-radius: 16px;
+  background-color: #FD747D;
+  margin: 24px 0;
+  font-size: 14px;
+}
+
+.event .event-right .event-description{
+  color: #fff;
+  font-weight: 200;
+}
+
+.event .event-right .event-timing img {
+  height: 20px;
+  padding-right: 8px;
+}
+
+@media (max-width: 550px) {
+  .event {
+    flex-direction: column;
+  }
+
+  .event .event-left {
+    padding: 0;
+    border-radius: 8px 8px 0 0;
+  }
+
+  .event .event-left .event-date .date,
+  .event .event-left .event-date .month {
+    display: inline-block;
+    font-size: 24px;
+  }
+
+  .event .event-left .event-date {
+    padding: 10px 0;
+  }
+}

@@ -1,0 +1,194 @@
+*{
+    margin: 0 ;
+    padding: 0;
+    font-family: "Open Sans";
+}
+
+body{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     flex-wrap: wrap;
+     min-height: 100vh;
+     background-color: #2a1e70;
+}
+
+
+
+
+
+
+
+section{
+    position: relative;
+    background-color: #2a1e70;
+}
+
+section::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: linear-gradient(#f00,#f0f);
+    clip-path: circle(30% at right 70%);
+}
+
+section::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: linear-gradient(#f00,#f0f);
+    clip-path: circle(30% at 10% 10%);
+}
+
+.container{
+    position: relative;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 40px 0;
+}
+
+.container .card{
+    position: relative;
+    width: 300px;
+    height: 400px;
+    background: rgba(255,255,255,0.05);
+    margin: 20px;
+    box-shadow: 0 15px 35 px rgba(0,0,0,0.2);
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: 2;
+}
+
+.container .card .teamcontent{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    opacity: 0.5;
+    transition: 0.5s;
+}
+
+.container .card:hover .teamcontent{
+    opacity: 1;
+}
+
+.container .card .teamcontent .imgbox{
+    position: relative;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 10px solid rgba(0,0,0,0.25);
+}
+
+.container .card .teamcontent .imgbox img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.container .card .teamcontent .contentbox h3{
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 500;
+    font-size: 18px;
+    text-align: center;
+    margin: 20px 0 10px;
+    line-height: 1.1em;
+}
+
+.container .card .teamcontent .contentbox h3 span{
+    font-size: 12px;
+    font-weight: 300;
+    text-transform: initial;   
+}
+
+.container .card .sci{
+    position: absolute;
+    bottom: 50px;
+    display: flex;
+}
+
+.container .card .sci li{
+    list-style: none;
+    margin: 0 10px ;
+    transform: translateY(40px);
+    transition: 0.5s;
+    transition-delay: calc(0.1s * var(--i));
+    opacity: 0;
+}
+
+.container .card:hover .sci li{
+    transform: translateY(0px);
+    opacity: 1;
+}
+
+.container .card .sci li a{
+    color: #fff;
+    font-size: 24px;
+}
+
+.teamTitle{
+    padding: 7rem;
+}
+
+.teamTitle p:nth-child(1){
+    color: #fff;
+    font-family: "open sans";
+    font-size: 4rem;
+    text-align: center;
+    font-weight: 700;
+}
+
+.teamTitle p:nth-child(3){
+    color: #fff;
+    font-family: "open sans";
+    font-size: 1.5rem;
+    text-align: center;
+    font-weight: lighter;
+}
+
+section P{
+    color: #fff;
+    text-align: center;
+    padding-top: 2rem;
+    font-size: 2rem;
+    font-weight: 600;
+    font-family: "open sans";
+}
+
+.floating-butn{
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    background: #F44F9D;
+    display:  flex;
+    border-radius: 50%;
+    color: #fff;
+    font-size: 40px;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.25);
+    position: fixed;
+    left: 20px;
+    top: 20px;
+    transition: backgroud 0.25s;
+    
+}
+
+.floating-butn:active{
+    background: #FD747D;
+}

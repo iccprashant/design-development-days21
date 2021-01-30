@@ -1,0 +1,30 @@
+
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;;
+}
+
+html {
+  overflow: scroll;
+  overflow-x: hidden;
+}
+
+body{
+    font-family: Open Sans;
+    background: url(../img/TOP_BACK.png) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    overflow: hidden;
+    height: 100%;
+}
+
+
+
+
+
+

@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+html{
+  overflow-x: hidden;
+}
+
+body{
+  font-family: Open Sans;
+  background: url(../img/TOP_BACK.png) no-repeat center center fixed;
+  /* -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -moz-background-size: cover; */
+  background-size: cover;
+  overflow: hidden;
+  height: 100%;
+}
+
+/* custom scroll bar */
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+    background: #F44F9E;
+}
+::selection{
+  background: rgb(40,30,112,0.3);
+}
+
+.logo img {
+  padding: 0.625vw;
+  width: 12.5vw;
+  margin-left: 0vw;
+}
+
+.content{
+  max-width: 1250px;
+  margin: auto;
+  padding: 0 30px;
+}
+.navbar{
+  position: fixed;
+  width: 100%;
+  z-index: 2;
+  padding: 25px 0;
+  transition: all 0.3s ease;
+}
+.navbar.sticky{
+  background: #2A1E70;
+  padding: 10px 0;
+  box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.1);
+}
+.navbar .content{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar .menu-list{
+  display: inline-flex;
+}
+.menu-list li{
+  list-style: none;
+}
+.menu-list li a{
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  margin-left: 35px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+.menu-list li a:hover{
+  color: #F44F9E;
+}
+/* .banner{
+  background: url("../img/TOP_BACK.png") no-repeat;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+ background-attachment: fixed;
+ } */
+
+ .heading{
+  /* position:fixed; */
+  margin-top: 12rem;
+  width:100%;
+  z-index:100;
+  margin-left: 15vw;
+  color: #fff;
+  font-family: "open sans";
+ }
+
+ .heading .child1{
+  font-weight: 400;
+  font-stretch:extra-expanded;
+  font-size: 1vw;
+ }
+
+.heading .child2{
+   font-size: 6vw;
+}
+
+.heading .child3{
+  font-weight: 500;
+  font-stretch:extra-expanded;
+  font-size: 1.2vw;
+ }
+
+
+.about{
+  padding: 30px 0;
+}
+.about .title{
+  font-size: 38px;
+  font-weight: 700;
+}
+.about p{
+  padding-top: 20px;
+  text-align: justify;
+}
+.icon{
+  color: #fff;
+  font-size: 33px;
+  cursor: pointer;
+  display: none;
+}
+.menu-list .cancel-btn{
+  position: absolute;
+  right: 30px;
+  top: 20px;
+}
+@media (max-width: 1230px) {
+  .content{
+    padding: 0 60px;
+  }
+}
+@media (max-width: 1100px) {
+  .content{
+    padding: 0 40px;
+  }
+}
+@media (max-width: 900px) {
+  .content{
+    padding: 0 30px;
+  }
+}
+@media (max-width: 868px) {
+  body.disabled{
+    overflow: hidden;
+  }
+  .icon{
+    display: block;
+  }
+  .icon.hide{
+    display: none;
+  }
+  .navbar .menu-list{
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    max-width: 400px;
+    left: -100%;
+    top: 0px;
+    display: block;
+    padding: 40px 0;
+    text-align: center;
+    background: #2A1E70;
+    transition: all 0.3s ease;
+  }
+  .navbar.show .menu-list{
+    left: 0%;
+  }
+  .navbar .menu-list li{
+    margin-top: 45px;
+  }
+  .navbar .menu-list li a{
+    font-size: 23px;
+    margin-left: -100%;
+    transition: 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+  .navbar.show .menu-list li a{
+    margin-left: 0px;
+  }
+}
+
+.content .Bg{
+  position: absolute;
+  top: 100%;
+  left: 0%;
+  height: 100px;
+}
+
+.content .rocket{
+  position: absolute;
+  top: 60%;
+  left: 45%;
+  display: flex;
+}
+
+@media screen and (max-width:1150px) {
+  .content .rocket {
+    display: none;
+  }
+}
