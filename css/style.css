@@ -105,7 +105,7 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 
 .fh5co-nav img{
-  width: 180px;
+  width: 145px;
   height: 72px;
 }
 @media screen and (max-width: 768px) {
@@ -976,6 +976,11 @@ form label {
   clear: both;
   background-color: #2a1e70;
 }
+
+#fh5co-about p{
+  text-align: justify;
+}
+
 @media screen and (max-width: 768px) {
   #fh5co-testimonial,
   #fh5co-services,
