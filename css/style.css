@@ -54,7 +54,17 @@ body {
   background: rgba(0, 0, 0, 0.7);
   content: "";
 }
+.buttonTop{
+  text-align: center;
+  display: inline-block;
+  /* position: absolute; */
+  align-items: center;
+  border-radius: 20px;
+}
 
+.buttonTop a{
+  margin: 1.6rem;
+}
 
 a {
   color: #F14E95;
@@ -811,6 +821,13 @@ form label {
   text-align: center;
   letter-spacing: .25em
 }
+
+/* @media screen and (max-width: 480px) {
+  #fh5co-header .display-tc{
+    padding-top: 2rem;
+
+  } */
+
 @media screen and (max-width: 768px) {
   #fh5co-header .display-tc h1,
   #fh5co-counter .display-tc h1,
