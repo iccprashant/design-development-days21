@@ -90,6 +90,15 @@ a:hover, a:active, a:focus {
   color: #fff;
 }
 
+.regButt2{
+  background-color: #2a1e70;
+  border: none;
+  padding: 0;
+  color: #F14E95;
+}
+
+
+
 p {
   margin-bottom: 20px;
 }
