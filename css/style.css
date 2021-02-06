@@ -78,6 +78,18 @@ a:hover, a:active, a:focus {
   text-decoration: none;
 }
 
+.regButt{
+  padding: 0.5rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  background-color: #F14E95;
+  border-radius: 30px;
+  border: none;
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+}
+
 p {
   margin-bottom: 20px;
 }
