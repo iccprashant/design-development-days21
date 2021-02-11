@@ -32,4 +32,67 @@ section{
 
 .accordion-item{
     background-color: #F44F9D;
+    border-radius: 0.4rem;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    box-shadow: 0.5rem 2px 0.5rem rgba(0,0,0,0.1);
 }
+
+.accordion-link{
+    font-size: 1.6rem;
+    color: white;
+    text-decoration: none;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 0;
+}
+
+.accordion-link i{
+    color: white;
+    padding: 0.5rem;
+}
+
+.accordion-link .ion-md-remove{
+    display:none;
+}
+
+.answer{
+    max-height: 0;
+    overflow: hidden;
+    position: relative;
+    transition: max-height 900ms;
+}
+
+.answer::before{
+    content: "";
+    position: absolute;
+    width: 0.6rem;
+    height: 90%;
+    background-color: #2A1E70;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+}
+
+.answer p{
+    color: white;
+    font-size: 1.4rem;
+    padding: 2rem;
+}
+
+.accordion-item:target .answer{
+    max-height: 20rem;
+}
+
+.accordion-item:target .accordion-link .ion-md-add{
+    display: none;
+}
+
+.accordion-item:target .accordion-link .ion-md-remove{
+    display: block;
+}
+
+
+
