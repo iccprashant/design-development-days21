@@ -619,6 +619,14 @@ h1, h2, h3, h4, h5, h6, figure {
     right: auto;
   }
 }
+
+#fh5co-gallery img{
+  height: 320px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 #fh5co-gallery-list {
   flex-wrap: wrap;
   -webkit-flex-wrap: wrap;
