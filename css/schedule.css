@@ -158,9 +158,9 @@ section P{
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 100px;
+  width: 130px;
   padding: 8px;
-  border-radius: 16px;
+  border-radius: 8px;
   background-color: #FD747D;
   margin: 24px 0;
   font-size: 14px;

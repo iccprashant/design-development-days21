@@ -1154,7 +1154,7 @@ form label {
 }
 #fh5co-testimonial .wrap-testimony .testimony-slide span {
   font-size: 12px;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
   letter-spacing: 2px;
   font-weight: 700;
   display: block;
@@ -1168,7 +1168,7 @@ form label {
   display: -moz-inline-stack;
   display: inline-block;
   zoom: 1;
-  *display: inline;
+  /* *display: inline; */
   width: 100px;
   height: 100px;
 }
