@@ -1982,6 +1982,17 @@ section::after{
   clip-path: circle(30% at 10% 10%);
 }
 
+.container2{
+  position: relative;
+  z-index: 1;
+  display: flex;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 40px 0;
+}
+
 /* .container{
   position: relative;
   z-index: 1;
