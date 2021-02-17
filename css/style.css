@@ -1023,6 +1023,12 @@ form label {
   background-color: #2a1e70;
 }
 
+#fh5co-testimonial #center1{
+  position: absolute;
+  left: 77px;
+  top: -39px;
+}
+
 #fh5co-about p{
   text-align: justify;
 }
