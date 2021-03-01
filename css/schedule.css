@@ -1,101 +1,105 @@
-*{
-    margin: 0 ;
-    padding: 0;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+* {
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
-body{
-     display: flex;
-     justify-content: center;
-     align-items: center;
-     flex-wrap: wrap;
-     min-height: 100vh;
-     background-color: #2a1e70;
-     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  min-height: 100vh;
+  background-color: #2a1e70;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
-section{
+section {
   position: relative;
   background-color: #2a1e70;
   width: 100%;
 }
 
-section::before{
-  content: '';
+section::before {
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
-  background: linear-gradient(#f00,#f0f);
+  background: linear-gradient(#f00, #f0f);
   clip-path: circle(30% at right 70%);
 }
 
-section::after{
-  content: '';
+section::after {
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
-  background: linear-gradient(#f00,#f0f);
+  background: linear-gradient(#f00, #f0f);
   clip-path: circle(30% at 10% 10%);
 }
 
-
-.teamTitle{
-    padding: 7rem;
+.teamTitle {
+  padding: 200px 30px;
 }
 
-.teamTitle p:nth-child(1){
-    color: #fff;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-size: 4rem;
-    text-align: center;
-    font-weight: 700;
+.teamTitle p:nth-child(1) {
+  color: #fff;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 4rem;
+  text-align: center;
+  font-weight: 700;
 }
 
-.teamTitle p:nth-child(3){
-    color: #fff;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-size: 1.5rem;
-    text-align: center;
-    font-weight: lighter;
+.teamTitle p:nth-child(2) {
+  color: #fff;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 20px;
+  text-align: center;
+  font-weight: lighter;
+  line-height: 30px;
 }
 
-
-section P{
-    color: #fff;
-    text-align: center;
-    padding-top: 2rem;
-    font-size: 2rem;
-    font-weight: 600;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+section P {
+  color: #fff;
+  text-align: center;
+  padding-top: 2rem;
+  font-size: 2rem;
+  font-weight: 600;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
-.floating-butn{
-    align-items: center;
-    justify-content: center;
-    width: 30px;
-    height: 30px;
-    background: #F44F9D;
-    display:  flex;
-    border-radius: 50%;
-    color: #fff;
-    font-size: 40px;
-    box-shadow: 2px 2px 5px rgba(0,0,0,0.25);
-    position: fixed;
-    left: 20px;
-    top: 20px;
-    transition: backgroud 0.25s;
-    
+.floating-butn {
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  background: #f44f9d;
+  display: flex;
+  border-radius: 50%;
+  color: #fff;
+  font-size: 40px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.25);
+  position: fixed;
+  left: 20px;
+  top: 20px;
+  transition: backgroud 0.25s;
 }
 
 /* ************************************************** */
-.floating-butn:active{
-    background: #FD747D;
+.floating-butn:active {
+  background: #fd747d;
 }
 
 .event-container {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   max-width: 800px;
   padding-top: 3rem;
   margin: 0 auto;
@@ -104,7 +108,7 @@ section P{
 .event-container h3.year {
   font-size: 40px;
   text-align: center;
-  color: #FD747D;
+  color: #fd747d;
   border-bottom: 1px solid #b1b1b1;
 }
 
@@ -113,8 +117,8 @@ section P{
   display: flex;
   border-radius: 8px;
   margin: 32px 0;
-  box-shadow: 0 15px 35 px rgba(0,0,0,0.2);
-  background: rgba(255,255,255,0.05)
+  box-shadow: 0 15px 35 px rgba(0, 0, 0, 0.2);
+  background: rgba(255, 255, 255, 0.05);
 }
 
 .event .event-left {
@@ -161,12 +165,12 @@ section P{
   width: 130px;
   padding: 8px;
   border-radius: 8px;
-  background-color: #FD747D;
+  background-color: #fd747d;
   margin: 24px 0;
   font-size: 14px;
 }
 
-.event .event-right .event-description{
+.event .event-right .event-description {
   color: #fff;
   font-weight: 200;
 }
@@ -194,5 +198,14 @@ section P{
 
   .event .event-left .event-date {
     padding: 10px 0;
+  }
+  .teamTitle p:nth-child(1) {
+    color: #fd747d;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+      Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    font-size: 32px;
+    text-align: ;
+    text-align: center;
+    font-weight: 700;
   }
 }
